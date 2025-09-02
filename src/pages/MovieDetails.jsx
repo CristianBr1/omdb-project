@@ -7,7 +7,7 @@ const MovieDetails = () => {
   const [movie, setMovie] = useState(null);
   const [error, setError] = useState(null);
 
-  const API_KEY = "4fc610df5e01ce19011e16a271c3f8c2";
+  const API_KEY = import.meta.env.VITE_API_KEY;
   const BASE_URL = "https://api.themoviedb.org/3";
 
   useEffect(() => {

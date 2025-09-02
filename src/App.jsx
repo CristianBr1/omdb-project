@@ -12,7 +12,7 @@ import FavoritesPage from "./pages/FavoritesPage";
 function App() {
   const [filmes, setFilmes] = useState([]);
 
-  const API_KEY = "4fc610df5e01ce19011e16a271c3f8c2"; // sua chave
+  const API_KEY = import.meta.env.VITE_API_KEY; // sua chave
   const BASE_URL = "https://api.themoviedb.org/3";
 
   // Carregar filmes populares
